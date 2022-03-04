@@ -3,4 +3,4 @@ Project of _Projecte Bàsic d'Enginyeria_ from ETSETB, Universitat Politècnica 
 
 You will find the following:
 * ## Puzzle1
-  Contains a file with the code in Ruby to work with the RFID Itead PN532 NFC module.
+  Contains the Ruby code file to work with the Itead PN532 NFC RFID module.
