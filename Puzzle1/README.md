@@ -9,3 +9,5 @@ You will find them below:
 - **libusb-dev:** `sudo apt-get install libusb-dev`
 - **libnfc:** https://github.com/nfc-tools/libnfc.git and follow the steps.
 - **libfreefare:** https://github.com/nfc-tools/libfreefare.git and follow the steps.
+
+Finally, install the Ruby gem: `sudo gem install ruby-nfc`
