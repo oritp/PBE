@@ -5,7 +5,7 @@ class Rfid
         def read_uid
                 @@reader[0].poll(Mifare::Classic::Tag) do |tag|
                 begin
-                        uid = uid_hex.upcase!                   # main method
+                        uid_hex.upcase!                   # main method
                         # uid = tag.to_s.split()[0].upcase!     # alternative method
                         return uid
                 rescue Exception => e
