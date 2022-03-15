@@ -7,7 +7,7 @@ You will find them below:
 
 - **autoconf, automake, git, libtool, libss1-dev, pkg-config:** `sudo apt-get install autoconf automake git libtool libssl-dev pkg-config`
 - **libusb-dev:** `sudo apt-get install libusb-dev`
-- **libnfc:** https://github.com/nfc-tools/libnfc.git and follow the steps.
-- **libfreefare:** https://github.com/nfc-tools/libfreefare.git and follow the steps.
+- **libnfc:** clone https://github.com/nfc-tools/libnfc.git or `sudo apt-get install libnfc-dev`
+- **libfreefare:** clone https://github.com/nfc-tools/libfreefare.git or `sudo apt-get install libfreefare-dev`
 
 Finally, install the Ruby gem: `sudo gem install ruby-nfc`
