@@ -5,4 +5,4 @@ You will find the following:
 - ## Puzzle1
   Contains the Ruby code file to work with the Itead PN532 NFC RFID module.
 - ## Puzzle2
-  Contains the Ruby code file to work with GTK3 User Interface.
+  Contains the User Interface version of the Puzzle1 code working with GTK3.
