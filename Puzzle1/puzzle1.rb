@@ -4,7 +4,8 @@ class Rfid
     @@reader = NFC::Reader.all
     def read_uid
         @@reader[0].poll(Mifare::Classic::Tag) do |tag|
-        return uid_hex.upcase!
+        return uid_hex.upcase!                              #main method
+        #return tag.to_s.split()[0].upcase!                 #alternative method
         rescue Exception => e
             puts e
         end
