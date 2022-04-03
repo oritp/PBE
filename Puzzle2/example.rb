@@ -1,6 +1,5 @@
 require 'gtk3'
 
-
 window = Gtk::Window.new("Example")
 window.set_size_request(400, 400)
 window.set_border_width(10)
