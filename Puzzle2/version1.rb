@@ -1,6 +1,7 @@
 require 'gtk3'
 require '../Desktop/puzzle1.rb'
 
+
 rf = Rfid.new
 
 #Creating and initializing the window
