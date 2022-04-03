@@ -17,19 +17,19 @@ label = Gtk::Label.new
 #Defining the different types of labels
 #Initial label that asks to log in with the RFID card
 def set_login_label(label)
-	provider = Gtk::CssProvider.new
-	provider.load(data: "label {background-color: #00BFFF; color: #FFFFFF; border-radius: 10px;}")
-	label.style_context.add_provider(provider, Gtk::StyleProvider::PRIORITY_USER)
+	white = Gdk::RGBA::new(1, 1, 1, 1)
+	blue = Gdk::RGBA::new(0, 0, 1, 1)
 	label.set_size_request(300, 80)
 	label.set_text("Please, login with your university card")
+	label.override_color(:normal, white)
+	label.override_background_color(:normal, blue)
 end
-
+	
 #Final label that shows the reading of the RFID card
 def set_uid_label(label, uid)
-	provider = Gtk::CssProvider.new
-	provider.load(data: "label {background-color: #DC143C;}")
-	label.style_context.add_provider(provider, Gtk::StyleProvider::PRIORITY_USER)
+	red = Gdk::RGBA::new(1, 0, 0, 1)
 	label.set_text("UID: " + uid)
+	label.override_background_color(:normal, red)
 end
 
 #Defining the Thread to read the RFID card while using the Puzzle1 code
@@ -46,12 +46,12 @@ button.signal_connect "clicked" do
 	run_thread(rf, label)
 end
 
-#When the window closes, the application ends.
+#When the window closes, the application ends
 window.signal_connect("destroy") do
 	Gtk.main_quit
 end
 
-#Adding and displaying items. Running the Thread for the first time.
+#Adding and displaying items. Running the Thread for the first time
 set_login_label(label)
 box.add(label)
 box.add(button)
