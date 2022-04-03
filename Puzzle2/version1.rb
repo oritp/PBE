@@ -3,6 +3,7 @@ require '../Desktop/puzzle1.rb'
 
 rf = Rfid.new
 
+
 #Creating and initializing the window
 window = Gtk::Window.new("Puzzle2")
 window.set_size_request(400, 150)
