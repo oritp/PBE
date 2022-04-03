@@ -18,7 +18,7 @@ label = Gtk::Label.new
 #Initial label that asks to log in with the RFID card
 def set_login_label(label)
 	provider = Gtk::CssProvider.new
-	provider.load(data: "label {background-color: #00BFFF; color: white; border-radius: 10px;}")
+	provider.load(data: "label {background-color: #00BFFF; color: #FFFFFF; border-radius: 10px;}")
 	label.style_context.add_provider(provider, Gtk::StyleProvider::PRIORITY_USER)
 	label.set_size_request(300, 80)
 	label.set_text("Please, login with your university card")
