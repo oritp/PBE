@@ -1,6 +1,6 @@
 var url = require('url');
 var options = require('./options.js');
-
+ 
 var handler = (req, res) => {
 	var params = new URLSearchParams(url.parse(req.url).query);
 	var id = params.get('uid');
