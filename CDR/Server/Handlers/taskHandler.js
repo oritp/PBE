@@ -10,7 +10,7 @@ var handler = (req, res) => {
     if (params.has('limit')) {
 		limit = params.get('limit');
 		params.delete('limit');
-	}
+	} 
     let now = Date.now();
     let date = new Date(now);
     var dateNow = date.getFullYear()+ '-' + (date.getMonth()+1) + '-' + date.getDate();
