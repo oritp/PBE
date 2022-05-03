@@ -12,7 +12,7 @@ var handler = (req, res) => {
 		else
 			options.reply(res, 200, JSON.stringify(result));
 	});
-};
+}; 
 
 module.exports = (req, res) => {
 	if (req.method == 'GET')
