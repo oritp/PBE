@@ -19,8 +19,7 @@ class Connexio
 			
 			#Exemple execucio
 			#data=JSON.parse({"name":"Oriol Torres","uid":"ED467D29"})
-			#puts data["name"]  =>"Oriol Torres"
-			
+			#puts data["name"]  => "Oriol Torres"
 		end
 		
 		if name == "NotFound" #si el uid no està a la nostra BD
@@ -42,4 +41,3 @@ class Connexio
 		return info
 	end	
 end
-
