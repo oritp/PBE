@@ -1,4 +1,4 @@
-# PBE
+# PBE (Projecte Bàsic d'Enginyeria)
 Project of _Projecte Bàsic d'Enginyeria_ from ETSETB, Universitat Politècnica de Catalunya.
 
 You will find the following:
