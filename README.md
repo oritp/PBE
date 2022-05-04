@@ -5,6 +5,6 @@ You will find the following:
 - ## Puzzle1
   Contains the Ruby code file to work with the Itead PN532 NFC RFID module.
 - ## Puzzle2
-  Contains the User Interface version for the Puzzle1 code working with GTK3.
+  Contains the User Interface version for Puzzle1 code working with GTK3.
 - ## CDR (Critical Design Review)
-  Contains the code to implement the extension of Ruby Client, Database and Server. 
+  Contains the code extension of the previous Puzzles to implement Ruby Client, Database and Server. 
