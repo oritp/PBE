@@ -36,7 +36,7 @@ var handler = (req, res) => {
 };
 
 module.exports = (req, res) => {
-	if (handler[req.method])
+	if (req.method == 'GET')
 		handler(req, res);
 	else
         options.reply(res, 404, "Not Found");
