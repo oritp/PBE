@@ -2,7 +2,6 @@ require "gtk3"
 require "lectura.rb"
 require "rfid.rb"
 
-
 class Client
 	@connect=Connexio.new
 	
@@ -107,7 +106,6 @@ class Client
 		when "marks"
 			titols=["Subject","Name","Mark"]
 			taula(lectura, titols)
-		
 		else
 			error
 		end
@@ -126,7 +124,6 @@ class Client
 			provider.load(data: "titol2 {background-color: #00BFFF; color: white; border-radius: 10px;}")
 			titol.style_context.add_provider(provider, Gtk::StyleProvider::PRIORITY_USER)
 			@grid.attach(titol,i,4,1,1)
-			
 			j=0
 			info=lectura[titols[i]]
 			while j<lectura.length do
