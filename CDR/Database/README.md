@@ -13,3 +13,13 @@ In order to use MySQL with NodeJS on the device requires the NPM package manager
 `sudo apt install npm`
 
 `npm install mysql`
+
+Get in the MariaDB (MySQL) server with the root user and create the new user with which the database will be made and accessed.
+
+`sudo mysql -u root -p`
+
+`CREATE USER 'pbe'@'localhost' IDENTIFIED BY 'password';`
+
+`GRANT ALL PRIVILEGES ON *.* TO 'pbe'@'localhost';`
+
+`FLUSH PRIVILEGES;`
