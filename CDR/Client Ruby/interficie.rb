@@ -1,6 +1,6 @@
-require "gtk3"
-require "lectura.rb"
-require "rfid.rb"
+require 'gtk3'
+require 'lectura.rb'
+require 'rfid.rb'
 
 class Client
 	@connect=Connexio.new
