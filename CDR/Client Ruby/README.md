@@ -3,7 +3,7 @@
 In this section we will find the necessary code to implement in Ruby the Client application that will be able to access the server and obtain the information from the database.
 It is a direct extension of Puzzle1 and Puzzle2.
 
-- **RFID:** The _rfid.rb_ file contains a Class based on Puzzle1 code that identifies the user by reading the RFID card from an RFID reader module and returns the User ID.
+- **RFID:** The _rfid.rb_ file contains a Class based on Puzzle1 code that identifies the user by reading the RFID card from an RFID reader module and returns the User ID. 
 
 - **LCD:** The _lcd.rb_ file contains a Class where all the necessary functions to operate with the LCD screen are introduced, such as initializing, welcoming the user or indicating an error.
 
