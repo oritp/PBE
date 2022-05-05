@@ -1,7 +1,7 @@
 # Puzzle2
 The _example.rb_ file contains an example of how the Gtk3 library works.
 
-The _version1.rb_ file contains the Puzzle2 code version styled by using Gdk, and this is not the finale one.
+The _version1.rb_ file contains the Puzzle2 code version styled by using Gdk, and this is not the final one.
 
 The _puzzle2.rb_ file contains the final version of the Puzzle2 code working with Gtk3 User Interface that reads an RFID by using the Itead PN532 NFC RFID module.
 In addition, this application requires the use of _Threads_, and this is styled by using _CSS_.
