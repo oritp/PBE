@@ -10,4 +10,4 @@ You will find them below:
 - **libnfc:** clone https://github.com/nfc-tools/libnfc.git or `sudo apt-get install libnfc-dev`
 - **libfreefare:** clone https://github.com/nfc-tools/libfreefare.git or `sudo apt-get install libfreefare-dev`
 
-Finally, install the Ruby gem: `sudo gem install ruby-nfc`
+Finally, install the Ruby gem: `sudo gem install ruby-nfc` 
