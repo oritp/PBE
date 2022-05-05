@@ -1,5 +1,5 @@
-require "gtk3"
-require "i2c/drivers/lcd"
+require 'gtk3'
+require 'i2c/drivers/lcd'
 
 class LCD
 	def inicialitzar
