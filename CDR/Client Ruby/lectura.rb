@@ -40,4 +40,4 @@ class Connexio
 		end
 		return info
 	end	
-end
+end 
