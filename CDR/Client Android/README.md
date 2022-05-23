@@ -8,7 +8,7 @@ Another important thing is to keep in mind that to connect to the port 3000 of t
 
 The most important files of the app are the following ones:
 
-- **AndroidManifest:** The _AndroidManifest.xml_ file Shows the essential information about the App, such as the name of the package, defines the components and classes, the initial activity and the necessary permissions.
+- **AndroidManifest:** The _AndroidManifest.xml_ file shows the essential information about the App, such as the name of the package, defines the components and classes, the initial activity and the necessary permissions.
 
 - **LoginActivity:** The _LoginActivity.java_ file is used to identify the user by asking him for username, password and the URL route of the server. 
 
