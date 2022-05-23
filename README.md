@@ -7,4 +7,4 @@ You will find the following:
 - ## Puzzle2
   Contains the User Interface version for Puzzle1 code working with GTK3.
 - ## CDR (Critical Design Review)
-  Contains the code extension of the previous Puzzles to implement Ruby Client, Database and Server. 
+  Contains the code extension of the previous Puzzles to implement Ruby, Web and Android Client, Database and Server. 
