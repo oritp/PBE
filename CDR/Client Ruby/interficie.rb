@@ -16,6 +16,10 @@ class Client
 		@grid.set_column_spacing(10)
 		@grid.set_row_spacing(10)
 		
+		@provider = Gtk::CssProvider.new
+		@style_provider = Gtk::StyleProvider::PRIORITY_USER
+		@provider.load(:data => File.read("estil.css"))
+		
 		Pantalla_Login
 	end
 	
@@ -26,9 +30,8 @@ class Client
 	    end
 		#Missatge LOGIN
 		login=Gtk::Label.new("Please, login with your university card")
-		provider = Gtk::CssProvider.new
-		provider.load(data: "login {background-color: #00BFFF; color: white; border-radius: 10px;}")
-		login.style_context.add_provider(provider, Gtk::StyleProvider::PRIORITY_USER)
+		login.set_name("login")
+		login.style_context.add_provider(@provider, @style_provider)
 		@grid.attach(login,1,1,2,1)
 		
 		@window.signal_connect("delete-event") { |_widget| Gtk.main_quit }
@@ -50,7 +53,7 @@ class Client
 	        @grid.remove(object)
 	    end
 		#DEMANA EL NOM AL SERVIDOR 
-		name = @connect.llegirNom(@uid)
+		name = @connect.llegir(null,@uid)
 		
 		#Missatge benvinguda
 		welcome=Gtk::Label.new("Welcome "+name)
@@ -84,14 +87,13 @@ class Client
 		
 		#Posem el titol de la taula corresponent
 		titol=Gtk::Label.new(informacio[0])
-		provider = Gtk::CssProvider.new
-		provider.load(data: "titol1 {background-color: #DC143C; color: white; border-radius: 10px;}")
-		titol.style_context.add_provider(provider, Gtk::StyleProvider::PRIORITY_USER)
+		titol.set_name("titol1")
+		titol.style_context.add_provider(@provider, @style_provider)
 		@window.add(titol)
 		@grid.attach(titol,2,3,2,1)
 		
 		#LLEGIM INFO DEL SERVER
-		lectura=@conect.llegirQuery(query, @uid)
+		lectura=@conect.llegir(query, @uid)
 		
 		#PROCESSEM LA INFO 
 		case informacio[0]
@@ -120,9 +122,8 @@ class Client
 		#ESCRIVIM ELS TITOLS
 		while i<titols.length do
 			titol=Gtk::Label.new(titols[i])
-			provider = Gtk::CssProvider.new
-			provider.load(data: "titol2 {background-color: #00BFFF; color: white; border-radius: 10px;}")
-			titol.style_context.add_provider(provider, Gtk::StyleProvider::PRIORITY_USER)
+			titol.set_name("titol2")
+			titol.style_context.add_provider(@provider, @style_provider)
 			@grid.attach(titol,i,4,1,1)
 			j=0
 			info=lectura[titols[i]]
@@ -139,9 +140,8 @@ class Client
 		dialog = Gtk::Dialog.new
 		dialog.title = "Error"
 		dialog.set_default_size(400,80)
-		provider = Gtk::CssProvider.new
-		provider.load(data: "dialog {background-color: #E11584;}")
-		dialog.style_context.add_provider(provider, Gtk::StyleProvider::PRIORITY_USER)
+		dualog.set_name("dialog")
+		dialog.style_context.add_provider(@provider, @style_provider)
 		close_button = dialog.add_button(Gtk::Stock::CLOSE, Gtk::ResponseType::CLOSE)
 		dialog.child.add(Gtk::Label.new("Cerca incorrecta. Torni a intentar-ho"))
 		dialog.signal_connect("response") {dialog.destroy}
