@@ -91,5 +91,9 @@ INSERT INTO marks VALUES
 ('PSVAC', 'Final', 2.2, '16CCB99B'),
 ('PSVAC', 'Final', 2, '33B7BF18');
 
+SELECT*FROM marks ORDER BY subject;
 SELECT*FROM tasks ORDER BY date DESC;
-SELECT*FROM timetables ORDER BY day DESC,hour DESC;
+SELECT day, hour FROM timetables
+	 ORDER BY CASE WHEN day = DATE_FORMAT(NOW(),'%w') AND hour >= DATE_FORMAT(NOW(),'%r') THEN hour END ASC
+	,CASE WHEN day > DATE_FORMAT(NOW(),'%w') THEN day AND hour END ASC
+  ,CASE WHEN day < DATE_FORMAT(NOW(),'%w') THEN day AND hour  END ASC;
