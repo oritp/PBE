@@ -1,4 +1,4 @@
-# Server
+# Server (previous version)
 
 In this section you will find the implementation of the server through NodeJS and from the HTTP protocol. In order to install NodeJS do the following:
 
