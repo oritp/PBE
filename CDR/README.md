@@ -14,4 +14,8 @@ Some examples of the queries:
 
 For the correct operation, the server must first be run with the following command: `node server.js`
 
-The client is then run with the following: `ruby interficie.rb`
+The Ruby client is then run executing _interficie.rb_ file.
+
+The Web client is then run executing _login.htlm_ file.
+
+The Android client is then run executing de APK application in an Android enviroment.
