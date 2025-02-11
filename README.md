@@ -1,5 +1,5 @@
 # PBE (Projecte Bàsic d'Enginyeria)
-Project of _Projecte Bàsic d'Enginyeria_ from ETSETB, Universitat Politècnica de Catalunya.
+Project of _Projecte Bàsic d'Enginyeria_ subject from ETSETB, Universitat Politècnica de Catalunya (UPC).
 
 You will find the following:
 - ## Puzzle1
